@@ -112,6 +112,10 @@ h1 {
 	margin-bottom: 50px;
 }
 
+.subtitle {
+	max-width: 68%;
+}
+
 .aside {
 	padding-right: 20px;
 	border-right: 7px solid var(--grey-light);
@@ -122,8 +126,6 @@ h1 {
 	flex-direction: column;
 	gap: 30px;
 }
-
-
 
 .aside__link {
 	display: flex;
@@ -181,16 +183,18 @@ h4 {
 
 .job__info {
 	display: flex;
-	gap: 40px;
+	gap: 10px;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+	flex-wrap: wrap;
 }
 
 .date {
 	font-size: 16px;
 	font-style: italic;
 	text-transform: lowercase;
+	text-align: end;
 }
 
 .education_item:not(:last-child),
@@ -211,6 +215,34 @@ h4 {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 30px;
+	gap: 10px;
 	flex-wrap: wrap;
+}
+
+@media (max-width:700px) {
+
+	.header {
+		flex-direction: column;
+	}
+
+	.performance {
+		padding: 30px 0 0;
+		height: 100%;
+		background-color: transparent;
+	}
+
+	.main {
+		flex-direction: column;
+	}
+
+	.aside {
+		border-right: none;
+		text-align: center;
+	}
+
+	.aside__links {
+		align-items: center;
+	}
+
+	.title {}
 }
