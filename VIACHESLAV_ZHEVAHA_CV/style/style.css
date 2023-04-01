@@ -7,7 +7,7 @@
 	--black-color: #000;
 	--grey-color: grey;
 	--grey-light: #f6f6f6;
-	--lightgrey-color: lightgrey;
+	--lightgreen-color: #e6fbe7;
 
 	--hover-time: .4s;
 
@@ -39,7 +39,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border-bottom: 2px dashed var(--lightgrey-color);
+	border-bottom: 2px dashed var(--lightgreen-color);
 
 	--photo-size: 180px;
 }
@@ -50,7 +50,7 @@ body {
 	flex-shrink: 0;
 	width: 180px;
 	height: 180px;
-	border: 3px solid var(--lightgrey-color);
+	border: 3px solid var(--lightgreen-color);
 	border-radius: 100%;
 	overflow: hidden;
 	box-shadow: 0 0 15px black;
@@ -65,7 +65,9 @@ body {
 	position: relative;
 	width: 100%;
 	height: var(--photo-size);
-	background-color: var(--lightgrey-color);
+	background-color: var(--lightgreen-color);
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
